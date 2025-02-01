@@ -1,0 +1,1 @@
+// there are 2 types of data types, primitive and
