@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block vs Inline Elements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+        }
+        
+        .block {
+            background-color: #add8e6;
+            padding: 15px;
+            margin: 10px 0;
+            border: 2px solid #0000ff;
+            border-radius: 5px;
+        }
+        
+        .inline {
+            background-color: #f08080;
+            padding: 5px 10px;
+            border: 2px solid #ff0000;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        
+        .inline-block {
+            background-color: #90ee90;
+            padding: 15px;
+            margin: 5px;
+            border: 2px solid #008000;
+            display: inline-block;
+            width: 180px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        
+        .block-inline {
+            background-color: #ffeb99;
+            padding: 15px;
+            margin: 10px 0;
+            border: 2px solid #ffa500;
+            display: block;
+            text-align: center;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h2>Block Elements</h2>
+    <div class="block">this is a block element (div). this takes up full width.</div>
+    <p class="block">this is a block element (p). this also takes up full width.</p>
+    
+    <h2>Inline Elements</h2>
+    <span class="inline">this is an inline element (span).</span>
+    <span class="inline">this stays in the same line.</span>
+    
+    <h2>Inline-Block Elements</h2>
+    <div class="inline-block">this is an inline-block element.</div>
+    <div class="inline-block">this respects width & height but stay inline.</div>
+    
+    <h2>Block and Inline Combination</h2>
+    <span class="block-inline">this is a block-styled inline element.</span>
+</body>
+</html>
